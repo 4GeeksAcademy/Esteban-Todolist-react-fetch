@@ -1,12 +1,100 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
-/* 
+h1 {
+    color: #61dafb;
+    margin-bottom: 20px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.FormBack {
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px -5px;
+    background: linear-gradient(144deg, #6a85b6, #bac8e0);
+    max-width: 600px;
+    margin: 0px 50px;
+}
 
-*/
+.input {
+    background: none;
+    border: 2px solid #61dafb;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    border-radius: 5px 0 0 5px;
+}
+
+.input::placeholder {
+    color: #cccccc;
+}
+
+.input:focus {
+    border-color: #21a1f1;
+    outline: none;
+}
+
+.todo-btn {
+    background: #61dafb;
+    border: 2px solid #21a1f1;
+    color: #282c34;
+    padding: 0.75rem 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.todo-btn:hover {
+    background: #21a1f1;
+}
+
+.todo-btn2 {
+    background: #21a1f1;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.todo-btn2:hover {
+    background: #61dafb;
+}
+
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #353a47;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #61dafb;
+}
+
+.fa {
+    visibility: hidden;
+    transition: .4s all;
+    color: #cccccc;
+}
+
+.fa:hover {
+    transform: scale(1.2);
+    background-color: #444b5b;
+    box-shadow: 0 0 7px 4px #444b5b;
+    color: white;
+}
+
+.Todo:hover .fa {
+    visibility: visible;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+}
